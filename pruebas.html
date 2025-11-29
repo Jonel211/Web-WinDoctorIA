@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Demostraciones y Pruebas de WinDoctorIA - Vea el software en acción">
+    <title>WinDoctorIA - Galería de Demostraciones</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .video-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 Aspect Ratio */
+            height: 0;
+            background: #000;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-content {
+            padding: 1.5rem;
+        }
+
+        .video-content h3,
+        .video-content h5 {
+            color: #2c3e50;
+        }
+
+        .video-content p {
+            color: #6c757d;
+        }
+
+        .video-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .badge-repair {
+            background: rgba(231, 74, 59, 0.1);
+            color: #e74a3b;
+        }
+
+        .badge-optimize {
+            background: rgba(28, 200, 138, 0.1);
+            color: #1cc88a;
+        }
+
+        .badge-monitor {
+            background: rgba(78, 115, 223, 0.1);
+            color: #4e73df;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            margin-bottom: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-stethoscope me-2"></i>
+                <span class="brand-text">WinDoctorIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#features">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#how-it-works">Cómo Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#pricing">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#download">Descargar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="documentación.html">Documentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pruebas.html">Demos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-contact" href="index.html#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Galería de Demostraciones</h1>
+            <p class="lead opacity-75">Vea cómo WinDoctorIA optimiza y repara su sistema en tiempo real</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mb-5">
+
+        <!-- Section: Panel de Reparaciones (Featured) -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="bg-primary text-white rounded-circle p-3 me-3">
+                        <i class="fas fa-tools fa-lg"></i>
+                    </div>
+                    <div>
+                        <h2 class="mb-0">Panel de Reparaciones y Optimización</h2>
+                        <p class="text-muted mb-0">Gestión avanzada de inicio y limpieza del sistema</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 1: Gestor de Inicio -->
+            <div class="col-lg-6 mb-4">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <!-- Remplazar src con el archivo de video real -->
+                        <video controls poster="img/poster-inicio.jpg">
+                            <source src="videos/SanLuis, Chino y Nacho - Se Acabó (Video Oficial).mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-badge badge-repair">Funcionalidad Principal</span>
+                        <h3>Gestor de Inicio Avanzado</h3>
+                        <p class="text-muted">Demostración de cómo optimizar el tiempo de arranque de Windows
+                            deshabilitando programas innecesarios y detectando entradas inválidas en el registro.</p>
+                        <ul class="list-unstyled small text-muted">
+                            <li><i class="fas fa-check text-success me-2"></i>Escaneo de Registro y Carpetas</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Elevación UAC Automática</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Acciones No Destructivas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2: Limpieza de Sistema -->
+            <div class="col-lg-6 mb-4">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <!-- Remplazar src con el archivo de video real -->
+                        <video controls poster="img/poster-limpieza.jpg">
+                            <source src="videos/Enrique Iglesias - Nunca Te Olvidaré (Official Music Video).mp4"
+                                type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-badge badge-optimize">Optimización</span>
+                        <h3>Limpieza y Mantenimiento</h3>
+                        <p class="text-muted">Vea cómo el sistema detecta y elimina archivos temporales, caché de DNS y
+                            residuos en la papelera de reciclaje para liberar espacio.</p>
+                        <ul class="list-unstyled small text-muted">
+                            <li><i class="fas fa-check text-success me-2"></i>Limpieza de Temporales</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Vaciado Inteligente de Papelera</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Flush DNS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <!-- Section: Otras Funcionalidades -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="d-flex align-items-center mb-4">
+                    <div class="bg-success text-white rounded-circle p-3 me-3">
+                        <i class="fas fa-chart-line fa-lg"></i>
+                    </div>
+                    <div>
+                        <h2 class="mb-0">Monitoreo y Herramientas Adicionales</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3: Dashboard -->
+            <div class="col-md-4 mb-4">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/dashboard.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-badge badge-monitor">Monitoreo</span>
+                        <h5>Dashboard en Tiempo Real</h5>
+                        <p class="small text-muted">Visualización de métricas de CPU, RAM y Disco con gráficos de alto
+                            rendimiento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 4: Duplicados -->
+            <div class="col-md-4 mb-4">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/duplicados.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-badge badge-optimize">Utilidad</span>
+                        <h5>Buscador de Duplicados</h5>
+                        <p class="small text-muted">Escaneo eficiente de archivos duplicados usando algoritmo SHA-256.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 5: Asistente IA -->
+            <div class="col-md-4 mb-4">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <video controls>
+                            <source src="videos/asistente_ia.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <span class="video-badge badge-monitor">Inteligencia Artificial</span>
+                        <h5>Asistente Virtual</h5>
+                        <p class="small text-muted">Interacción con el asistente de IA para diagnóstico y consultas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-stethoscope me-2"></i>
+                        <span>WinDoctorIA</span>
+                    </div>
+                    <p class="footer-description">
+                        Solución empresarial de diagnóstico y reparación inteligente para Windows. Potenciado por IA
+                        avanzada.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Producto</h5>
+                    <ul class="footer-links">
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="#download">Descargar</a></li>
+                        <li><a href="documentación.html">Documentación</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Soporte</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="pruebas.html">Tutoriales</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Licencia</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 WinDoctorIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

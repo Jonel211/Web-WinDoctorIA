@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinDoctorIA - Documentación Técnica Profesional</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Prism.js for Code Highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <!-- Mermaid.js for Diagrams -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#sidebar-nav" data-bs-offset="100">
+
+    <!-- Header -->
+    <header class="doc-header">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="doc-title"><i class="fas fa-stethoscope me-2"></i>WinDoctorIA</h1>
+                    <p class="doc-subtitle">Documentación Técnica Profesional</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a class="btn btn-outline-primary btn-sm me-2" href="index.html">
+                        <i class="fas fa-arrow-left me-1"></i> Regresar
+                    </a>
+                    <button class="btn btn-outline-primary btn-sm me-2" onclick="window.print()">
+                        <i class="fas fa-print me-1"></i> Imprimir
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm" onclick="exportToPDF()">
+                        <i class="fas fa-file-pdf me-1"></i> Exportar PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar Navigation -->
+            <nav id="sidebar-nav" class="col-md-3 col-lg-2 d-md-block sidebar">
+                <div class="position-sticky">
+                    <h6 class="sidebar-heading">Tabla de Contenidos</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link" href="#portada">1. Portada</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#objetivos">2. Objetivos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#problematica">3. Problemática</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#importancia">4. Importancia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#marco-teorico">5. Marco Teórico</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#arquitectura">6. Arquitectura</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tecnologias">7. Tecnologías</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#funcionalidades">8. Funcionalidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#implementacion">9. Implementación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pruebas">10. Pruebas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusiones">11. Conclusiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#referencias">12. Referencias</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Documentation Content -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 doc-content">
+
+                <!-- 1. PORTADA -->
+                <section id="portada" class="doc-section cover-page">
+                    <div class="text-center py-5">
+                        <div class="cover-logo mb-4">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h1 class="display-3 fw-bold mb-3">WinDoctorIA</h1>
+                        <h2 class="h3 text-muted mb-4">Sistema de Diagnóstico y Reparación Inteligente para Windows</h2>
+                        <div class="cover-meta">
+                            <p class="mb-2">Versión 1.0.0</p>
+                        </div>
+                        <div class="cover-abstract mt-5 text-start">
+                            <h4 class="text-center mb-3">Resumen Ejecutivo</h4>
+                            <p class="lead">
+                                WinDoctorIA es un sistema inteligente de diagnóstico y reparación automática para
+                                sistemas operativos Windows,
+                                desarrollado con tecnologías de inteligencia artificial y aprendizaje automático. El
+                                sistema permite detectar,
+                                diagnosticar y resolver problemas de rendimiento (CPU, RAM, disco, red) de forma
+                                automática y segura,
+                                reduciendo significativamente los tiempos de resolución y los costos de soporte técnico.
+                            </p>
+                            <p>
+                                Este documento presenta la documentación técnica completa del proyecto, incluyendo
+                                objetivos, arquitectura,
+                                tecnologías utilizadas, procesos de desarrollo, pruebas realizadas y resultados
+                                obtenidos.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. OBJETIVOS -->
+                <section id="objetivos" class="doc-section">
+                    <h2 class="section-title">2. Objetivos del Proyecto</h2>
+
+                    <div class="subsection">
+                        <h3>2.1 Objetivo General</h3>
+                        <div class="objective-box">
+                            <p>
+                                Desarrollar un sistema inteligente de diagnóstico y reparación automática para sistemas
+                                operativos Windows
+                                que utilice algoritmos de inteligencia artificial para detectar, analizar y resolver
+                                problemas de rendimiento
+                                de forma segura, eficiente y sin intervención manual del usuario.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>2.2 Objetivos Específicos</h3>
+                        <ol class="objectives-list">
+                            <li>
+                                <strong>Implementar un motor de diagnóstico inteligente</strong> capaz de analizar en
+                                tiempo real
+                                el estado del sistema (CPU, RAM, disco, red, temperatura) y detectar anomalías de
+                                rendimiento mediante algoritmos de IA.
+                            </li>
+                            <li>
+                                <strong>Desarrollar un Gestor de Inicio Avanzado</strong> que optimice el arranque de
+                                Windows mediante escaneo exhaustivo del Registro (HKCU/HKLM/WOW6432Node) y carpetas de
+                                inicio, con elevación UAC automática para modificaciones privilegiadas.
+                            </li>
+                            <li>
+                                <strong>Implementar un Buscador de Duplicados eficiente</strong> utilizando algoritmo
+                                SHA-256 en 3 etapas (tamaño, hash parcial, hash completo) con integración nativa a la
+                                Papelera de Reciclaje mediante ctypes.
+                            </li>
+                            <li>
+                                <strong>Generar reportes profesionales</strong> en formatos PDF y TXT que documenten el
+                                estado
+                                del sistema, problemas detectados y acciones realizadas.
+                            </li>
+                            <li>
+                                <strong>Validar la efectividad del sistema</strong> mediante pruebas exhaustivas que
+                                demuestren
+                                su capacidad para resolver problemas reales de rendimiento.
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>2.3 Alcance del Proyecto</h3>
+                        <div class="scope-grid">
+                            <div class="scope-item included">
+                                <h4><i class="fas fa-check-circle"></i> Incluido</h4>
+                                <ul>
+                                    <li>Diagnóstico de CPU, RAM, disco, red y temperatura</li>
+                                    <li>Gestor de Inicio con elevación UAC automática</li>
+                                    <li>Buscador de Duplicados con hashing SHA-256</li>
+                                    <li>Dashboard con gráficos GPU accelerated</li>
+                                    <li>Integración nativa con API de Windows (ctypes)</li>
+                                    <li>Generación de reportes PDF/TXT</li>
+                                    <li>Interfaz gráfica moderna con PySide6</li>
+                                    <li>Soporte para Windows 10/11 (64-bit)</li>
+                                </ul>
+                            </div>
+                            <div class="scope-item excluded">
+                                <h4><i class="fas fa-times-circle"></i> No Incluido</h4>
+                                <ul>
+                                    <li>Soporte para Windows 7/8</li>
+                                    <li>Versión para macOS o Linux</li>
+                                    <li>Antivirus completo en tiempo real</li>
+                                    <li>Reparación de hardware físico</li>
+                                    <li>Soporte remoto o cloud</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3. PROBLEMÁTICA -->
+                <section id="problematica" class="doc-section">
+                    <h2 class="section-title">3. Problemática</h2>
+
+                    <div class="subsection">
+                        <h3>3.1 Contexto del Problema</h3>
+                        <p>
+                            Los sistemas operativos Windows, siendo los más utilizados a nivel mundial con más del 70%
+                            de cuota de mercado
+                            en computadoras de escritorio, enfrentan problemas recurrentes de rendimiento que afectan la
+                            productividad
+                            de usuarios individuales y empresas.
+                        </p>
+                        <p>
+                            Según estudios de la industria, los usuarios de Windows experimentan en promedio:
+                        </p>
+                        <ul>
+                            <li>3-5 problemas de rendimiento por mes</li>
+                            <li>2-4 horas perdidas mensualmente en diagnóstico y resolución</li>
+                            <li>Costos de soporte técnico de $50-150 USD por incidente</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>3.2 Problemas Identificados</h3>
+                        <div class="problem-cards">
+                            <div class="problem-card">
+                                <div class="problem-icon"><i class="fas fa-microchip"></i></div>
+                                <h4>Alto Uso de CPU</h4>
+                                <p>Procesos en segundo plano consumen recursos excesivos, causando lentitud general del
+                                    sistema.</p>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-icon"><i class="fas fa-memory"></i></div>
+                                <h4>Memoria RAM Insuficiente</h4>
+                                <p>Aplicaciones acumulan memoria sin liberarla, provocando ralentización y cierres
+                                    inesperados.</p>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-icon"><i class="fas fa-hdd"></i></div>
+                                <h4>Disco Lleno</h4>
+                                <p>Archivos temporales y caché acumulados ocupan espacio crítico del disco duro.</p>
+                            </div>
+                            <div class="problem-card">
+                                <div class="problem-icon"><i class="fas fa-wifi"></i></div>
+                                <h4>Problemas de Red</h4>
+                                <p>Configuración de red corrupta impide conexión a internet o causa intermitencias.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>3.3 Barreras Actuales</h3>
+                        <div class="alert alert-warning">
+                            <h5><i class="fas fa-exclamation-triangle me-2"></i>Desafíos para los Usuarios</h5>
+                            <ul class="mb-0">
+                                <li><strong>Conocimiento técnico requerido:</strong> La mayoría de soluciones requieren
+                                    experiencia en sistemas</li>
+                                <li><strong>Herramientas dispersas:</strong> No existe una solución unificada para todos
+                                    los problemas</li>
+                                <li><strong>Riesgo de errores:</strong> Acciones incorrectas pueden empeorar el sistema
+                                </li>
+                                <li><strong>Tiempo de diagnóstico:</strong> Identificar la causa raíz puede tomar horas
+                                </li>
+                                <li><strong>Costos de soporte:</strong> Contratar técnicos especializados es costoso
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. IMPORTANCIA -->
+                <section id="importancia" class="doc-section">
+                    <h2 class="section-title">4. Importancia del Proyecto</h2>
+                    <div class="subsection">
+                        <h3>4.1 Beneficios para Usuarios</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="benefit-box">
+                                    <h4><i class="fas fa-user me-2"></i>Usuarios Individuales</h4>
+                                    <ul>
+                                        <li>Resolución inmediata sin conocimientos técnicos</li>
+                                        <li>Ahorro de tiempo y dinero en soporte</li>
+                                        <li>Sistema más rápido y estable</li>
+                                        <li>Prevención de problemas futuros</li>
+                                        <li>Interfaz fácil de usar</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="benefit-box">
+                                    <h4><i class="fas fa-building me-2"></i>Empresas</h4>
+                                    <ul>
+                                        <li>Reducción de tickets de soporte técnico</li>
+                                        <li>Mayor productividad de empleados</li>
+                                        <li>Menor tiempo de inactividad</li>
+                                        <li>Reportes detallados para auditorías</li>
+                                        <li>Escalabilidad a múltiples equipos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>4.2 Innovación Tecnológica</h3>
+                        <p>
+                            WinDoctorIA representa una innovación significativa al combinar:
+                        </p>
+                        <ul class="innovation-list">
+                            <li><i class="fas fa-brain"></i> <strong>Inteligencia Artificial:</strong> Diagnóstico
+                                predictivo y aprendizaje continuo</li>
+                            <li><i class="fas fa-shield-alt"></i> <strong>Seguridad:</strong> Solo ejecuta acciones
+                                verificadas y seguras</li>
+                            <li><i class="fas fa-bolt"></i> <strong>Automatización:</strong> Resolución con un solo clic
+                            </li>
+                            <li><i class="fas fa-chart-line"></i> <strong>Monitoreo:</strong> Análisis en tiempo real
+                                del sistema</li>
+                            <li><i class="fas fa-file-pdf"></i> <strong>Documentación:</strong> Reportes profesionales
+                                automáticos</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 5. MARCO TEÓRICO -->
+                <section id="marco-teorico" class="doc-section">
+                    <h2 class="section-title">5. Marco Teórico</h2>
+
+                    <div class="subsection">
+                        <h3>5.1 Conceptos Fundamentales</h3>
+
+                        <div class="concept-box">
+                            <h4>Diagnóstico de Sistemas</h4>
+                            <p>
+                                El diagnóstico de sistemas es el proceso de identificar y analizar problemas en el
+                                funcionamiento
+                                de un sistema informático mediante la recopilación de métricas, análisis de
+                                comportamiento y
+                                comparación con estados óptimos conocidos.
+                            </p>
+                        </div>
+
+                        <div class="concept-box">
+                            <h4>Inteligencia Artificial en Sistemas</h4>
+                            <p>
+                                La aplicación de IA en diagnóstico de sistemas permite:
+                            </p>
+                            <ul>
+                                <li><strong>Detección de patrones:</strong> Identificar comportamientos anómalos</li>
+                                <li><strong>Predicción:</strong> Anticipar problemas antes de que ocurran</li>
+                                <li><strong>Clasificación:</strong> Categorizar problemas por tipo y severidad</li>
+                                <li><strong>Optimización:</strong> Sugerir acciones correctivas óptimas</li>
+                            </ul>
+                        </div>
+
+                        <div class="concept-box">
+                            <h4>Análisis Heurístico</h4>
+                            <p>
+                                Técnica de detección de malware que analiza el comportamiento de procesos en lugar de
+                                depender
+                                únicamente de firmas conocidas. Permite detectar amenazas nuevas o variantes de malware
+                                existente.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 6. ARQUITECTURA DEL SISTEMA -->
+                <section id="arquitectura" class="doc-section">
+                    <h2 class="section-title">6. Arquitectura del Sistema</h2>
+
+                    <div class="subsection">
+                        <h3>6.1 Diagrama de Arquitectura</h3>
+                        <div class="diagram-container">
+                            <pre class="mermaid">
+graph TB
+    subgraph "Capa de Presentación"
+        GUI[GUI - PySide6]
+        Panels[Paneles Especializados]
+    end
+    
+    subgraph "Capa de Lógica de Negocio"
+        IA[Motor IA]
+        Diag[Sistema Diagnóstico]
+        Rep[Reparador]
+        Mal[Detector Malware]
+    end
+    
+    subgraph "Capa de Datos"
+        Sys[Sistema Operativo]
+        Proc[Procesos]
+        Files[Sistema de Archivos]
+    end
+    
+    GUI --> Panels
+    Panels --> IA
+    Panels --> Diag
+    Panels --> Rep
+    Panels --> Mal
+    
+    IA --> Diag
+    Diag --> Sys
+    Rep --> Sys
+    Mal --> Proc
+    
+    Sys --> Proc
+    Sys --> Files
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>6.2 Componentes Principales</h3>
+                        <div class="component-list">
+                            <div class="component-item">
+                                <h4><i class="fas fa-desktop"></i> Capa de Presentación</h4>
+                                <ul>
+                                    <li><strong>LayoutMain:</strong> Ventana principal con navegación lateral</li>
+                                    <li><strong>PanelInicio:</strong> Dashboard con gráficos circulares profesionales
+                                        (gradientes cónicos)</li>
+                                    <li><strong>PanelDiagnostico:</strong> Visualización de problemas detectados</li>
+                                    <li><strong>PanelAsistente:</strong> Interfaz de IA conversacional</li>
+                                    <li><strong>PanelReparaciones:</strong> Gestor de Inicio con diálogo de programas
+                                    </li>
+                                    <li><strong>PanelMonitor:</strong> Monitoreo en tiempo real con widgets
+                                        personalizados</li>
+                                    <li><strong>PanelDuplicados:</strong> Buscador de archivos duplicados</li>
+                                    <li><strong>PanelReportes:</strong> Generación de documentos PDF/TXT</li>
+                                </ul>
+                            </div>
+
+                            <div class="component-item">
+                                <h4><i class="fas fa-cogs"></i> Capa de Lógica</h4>
+                                <ul>
+                                    <li><strong>AsistenteIA:</strong> Motor de inteligencia artificial</li>
+                                    <li><strong>Sistema:</strong> Recopilación de métricas (psutil)</li>
+                                    <li><strong>Reparador:</strong> Gestión de inicio, papelera, caché y elevación UAC
+                                    </li>
+                                    <li><strong>Duplicados:</strong> Detección de duplicados con SHA-256 en 3 etapas
+                                    </li>
+                                    <li><strong>Monitor:</strong> Servicio de monitoreo en tiempo real</li>
+                                    <li><strong>GeneradorPDF:</strong> Creación de reportes profesionales</li>
+                                </ul>
+                            </div>
+
+                            <div class="component-item">
+                                <h4><i class="fas fa-database"></i> Capa de Datos e Integración</h4>
+                                <ul>
+                                    <li><strong>psutil:</strong> Recopilación de métricas del sistema (CPU, RAM, Disco,
+                                        Red, Temp)</li>
+                                    <li><strong>ctypes + Windows API:</strong> SHFileOperationW (Papelera),
+                                        ShellExecuteW (UAC), SHQueryRecycleBinW</li>
+                                    <li><strong>winreg:</strong> Lectura/escritura del Registro de Windows</li>
+                                    <li><strong>pythoncom + win32com:</strong> Resolución de accesos directos .lnk</li>
+                                    <li><strong>hashlib:</strong> Hashing SHA-256 para detección de duplicados</li>
+                                    <li><strong>os/shutil:</strong> Manipulación de archivos y directorios</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>6.3 Flujo de Datos</h3>
+                        <div class="diagram-container">
+                            <pre class="mermaid">
+sequenceDiagram
+    participant U as Usuario
+    participant GUI as Interfaz
+    participant IA as Motor IA
+    participant Diag as Diagnóstico
+    participant Rep as Reparador
+    participant OS as Sistema
+    
+    U->>GUI: Solicita diagnóstico
+    GUI->>Diag: Analizar sistema
+    Diag->>OS: Obtener métricas
+    OS-->>Diag: CPU, RAM, Disco, Red
+    Diag->>IA: Evaluar métricas
+    IA-->>Diag: Problemas detectados
+    Diag-->>GUI: Mostrar resultados
+    GUI-->>U: Visualizar problemas
+    
+    U->>GUI: Resolver automáticamente
+    GUI->>IA: Generar plan de acción
+    IA->>Rep: Ejecutar reparaciones
+    Rep->>OS: Aplicar cambios
+    OS-->>Rep: Confirmación
+    Rep-->>GUI: Resultados
+    GUI-->>U: Mostrar éxito
+                            </pre>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>6.4 Patrones de Diseño</h3>
+                        <ul>
+                            <li><strong>MVC (Model-View-Controller):</strong> Separación de lógica de negocio y
+                                presentación</li>
+                            <li><strong>Observer:</strong> Actualización automática de la interfaz ante cambios de
+                                estado</li>
+                            <li><strong>Strategy:</strong> Diferentes algoritmos de diagnóstico según el tipo de
+                                problema</li>
+                            <li><strong>Factory:</strong> Creación de paneles y componentes de interfaz</li>
+                            <li><strong>Singleton:</strong> Instancia única del sistema de diagnóstico</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 7. TECNOLOGÍAS UTILIZADAS -->
+                <section id="tecnologias" class="doc-section">
+                    <h2 class="section-title">7. Tecnologías Utilizadas</h2>
+
+                    <div class="subsection">
+                        <h3>7.1 Stack Tecnológico</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="tech-card">
+                                    <div class="tech-icon"><i class="fab fa-python"></i></div>
+                                    <h4>Backend / Lógica</h4>
+                                    <ul>
+                                        <li><strong>Python 3.8+:</strong> Lenguaje principal del proyecto</li>
+                                        <li><strong>psutil 5.9.0:</strong> Monitoreo de recursos del sistema</li>
+                                        <li><strong>ctypes:</strong> Integración nativa con API de Windows</li>
+                                        <li><strong>winreg:</strong> Manipulación del Registro de Windows</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tech-card">
+                                    <div class="tech-icon"><i class="fas fa-desktop"></i></div>
+                                    <h4>Interfaz Gráfica</h4>
+                                    <ul>
+                                        <li><strong>PySide6 6.6.0:</strong> Framework Qt para Python</li>
+                                        <li><strong>QtAwesome:</strong> Iconos vectoriales integrados</li>
+                                        <li><strong>QPainter:</strong> Gráficos personalizados de alto rendimiento</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tech-card">
+                                    <div class="tech-icon"><i class="fas fa-file-pdf"></i></div>
+                                    <h4>Generación de Reportes</h4>
+                                    <ul>
+                                        <li><strong>ReportLab 4.0.7:</strong> Creación de documentos PDF</li>
+                                        <li><strong>datetime:</strong> Gestión de fechas y timestamps</li>
+                                        <li><strong>json:</strong> Exportación de datos estructurados</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="tech-card">
+                                    <div class="tech-icon"><i class="fas fa-tools"></i></div>
+                                    <h4>Herramientas de Desarrollo</h4>
+                                    <ul>
+                                        <li><strong>Git:</strong> Control de versiones distribuido</li>
+                                        <li><strong>VS Code:</strong> Editor de código principal</li>
+                                        <li><strong>PowerShell:</strong> Scripts de automatización</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>7.2 Dependencias Completas</h3>
+                        <pre><code class="language-python"># requirements.txt
+PySide6==6.6.0
+psutil==5.9.0
+reportlab==4.0.7
+qtawesome
+winshell
+pythoncom
+pywin32</code></pre>
+                    </div>
+                </section>
+
+                <!-- 8. FUNCIONALIDADES PRINCIPALES -->
+                <section id="funcionalidades" class="doc-section">
+                    <h2 class="section-title">8. Funcionalidades Principales</h2>
+
+                    <div class="subsection">
+                        <h3>8.1 Módulos del Sistema</h3>
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="feature-card-doc">
+                                    <div class="feature-number">01</div>
+                                    <h4>Diagnóstico Inteligente</h4>
+                                    <p>Análisis en tiempo real de CPU, RAM, disco, red y temperatura con detección
+                                        automática de anomalías mediante algoritmos de IA.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card-doc">
+                                    <div class="feature-number">02</div>
+                                    <h4>Gestor de Inicio Avanzado</h4>
+                                    <p>Optimización del arranque de Windows mediante escaneo exhaustivo del Registro
+                                        (HKCU/HKLM/WOW6432Node) y carpetas de inicio, con elevación UAC automática para
+                                        modificaciones privilegiadas.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card-doc">
+                                    <div class="feature-number">03</div>
+                                    <h4>Buscador de Duplicados</h4>
+                                    <p>Detección eficiente de archivos duplicados mediante algoritmo SHA-256 en 3 etapas
+                                        (tamaño, hash parcial, hash completo) con integración nativa a la Papelera de
+                                        Reciclaje vía ctypes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card-doc">
+                                    <div class="feature-number">04</div>
+                                    <h4>Monitoreo Visual Profesional</h4>
+                                    <p>Dashboard con gráficos de alto rendimiento (GPU accelerated) usando QPainter,
+                                        gradientes cónicos y efectos modernos para visualización de métricas en tiempo
+                                        real.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card-doc">
+                                    <div class="feature-number">05</div>
+                                    <h4>Asistente IA</h4>
+                                    <p>Interfaz conversacional que analiza el estado del sistema y sugiere soluciones
+                                        personalizadas basadas en el contexto actual.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="feature-card-doc">
+                                    <div class="feature-number">06</div>
+                                    <h4>Reportes Profesionales</h4>
+                                    <p>Generación automática de documentos PDF/TXT con análisis completo del sistema y
+                                        registro detallado de todas las acciones realizadas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 9. IMPLEMENTACIÓN -->
+                <section id="implementacion" class="doc-section">
+                    <h2 class="section-title">9. Implementación</h2>
+
+                    <div class="subsection">
+                        <h3>9.1 Estructura del Código</h3>
+                        <pre><code class="language-python"># Estructura del proyecto
+WinDoctorIA/
+├── main.py                          # Punto de entrada
+├── gui/
+│   ├── layout_main.py               # Ventana principal
+│   ├── panel_inicio.py              # Dashboard con gráficos profesionales
+│   ├── panel_diagnostico.py         # Análisis del sistema
+│   ├── panel_asistente.py           # Chat con IA
+│   ├── panel_reparaciones.py        # Gestor de Inicio
+│   ├── panel_monitor.py             # Monitoreo en tiempo real
+│   ├── panel_duplicados.py          # Buscador de duplicados
+│   ├── dialogo_programas_inicio.py  # Diálogo de programas de inicio
+│   └── widgets_monitor.py           # Widgets personalizados
+├── core/
+│   ├── ia_engine.py                 # Motor de IA
+│   ├── sistema.py                   # Métricas del sistema (psutil)
+│   ├── reparador.py                 # Acciones de optimización
+│   ├── duplicados.py                # Detección de duplicados (SHA-256)
+│   └── monitor.py                   # Servicio de monitoreo
+└── utils/
+    └── generador_pdf.py             # Generación de reportes</code></pre>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>9.2 Algoritmo de Detección de Duplicados</h3>
+                        <pre><code class="language-python">def buscar_duplicados(self, directorio):
+    """Algoritmo eficiente de 3 etapas para detectar duplicados"""
+    # Etapa 1: Agrupar por tamaño
+    archivos_por_tamano = {}
+    for archivo in Path(directorio).rglob('*'):
+        if archivo.is_file():
+            tamano = archivo.stat().st_size
+            archivos_por_tamano.setdefault(tamano, []).append(archivo)
+    
+    # Etapa 2: Hash parcial (primeros 8KB)
+    candidatos = {}
+    for archivos in archivos_por_tamano.values():
+        if len(archivos) > 1:
+            for archivo in archivos:
+                hash_parcial = self._hash_parcial(archivo)
+                candidatos.setdefault(hash_parcial, []).append(archivo)
+    
+    # Etapa 3: Hash completo (SHA-256)
+    duplicados = {}
+    for archivos in candidatos.values():
+        if len(archivos) > 1:
+            for archivo in archivos:
+                hash_completo = self._hash_completo(archivo)
+                duplicados.setdefault(hash_completo, []).append(archivo)
+    
+    return {k: v for k, v in duplicados.items() if len(v) > 1}</code></pre>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>9.3 Integración con API de Windows</h3>
+                        <pre><code class="language-python"># Elevación UAC automática
+def _ejecutar_elevado(self, comando):
+    """Ejecuta comando con privilegios de administrador"""
+    ret = ctypes.windll.shell32.ShellExecuteW(
+        None, "runas", "cmd.exe", f'/c {comando}',
+        None, 0  # SW_HIDE
+    )
+    return ret > 32  # Éxito si > 32
+
+# Enviar a Papelera de Reciclaje (nativo)
+def eliminar_archivo(self, ruta):
+    """Envía archivo a la papelera usando SHFileOperationW"""
+    class SHFILEOPSTRUCT(ctypes.Structure):
+        _fields_ = [
+            ("hwnd", wintypes.HWND),
+            ("wFunc", wintypes.UINT),
+            ("pFrom", wintypes.LPCWSTR),
+            ("pTo", wintypes.LPCWSTR),
+            ("fFlags", wintypes.WORD),
+            ("fAnyOperationsAborted", wintypes.BOOL),
+            ("hNameMappings", wintypes.LPVOID),
+            ("lpszProgressTitle", wintypes.LPCWSTR)
+        ]
+    
+    fileop = SHFILEOPSTRUCT()
+    fileop.wFunc = 3  # FO_DELETE
+    fileop.pFrom = ruta + '\0'
+    fileop.fFlags = 0x0040 | 0x0010  # FOF_ALLOWUNDO | FOF_NOCONFIRMATION
+    
+    result = ctypes.windll.shell32.SHFileOperationW(ctypes.byref(fileop))
+    return result == 0</code></pre>
+                    </div>
+                </section>
+
+                <!-- 10. PRUEBAS Y VALIDACIÓN -->
+                <section id="pruebas" class="doc-section">
+                    <h2 class="section-title">10. Pruebas y Validación</h2>
+
+                    <div class="subsection">
+                        <h3>10.1 Metodología de Pruebas</h3>
+                        <p>En la pagina principal se muestra la funcionalidad de la herramienta.</p>
+                    </div>
+                </section>
+
+                <!-- 11. CONCLUSIONES -->
+                <section id="conclusiones" class="doc-section">
+                    <h2 class="section-title">11. Conclusiones</h2>
+
+                    <div class="subsection">
+                        <h3>11.1 Logros Alcanzados</h3>
+                        <div class="achievement-grid">
+                            <div class="achievement-item">
+                                <i class="fas fa-trophy"></i>
+                                <h4>Sistema Funcional Completo</h4>
+                                <p>Se desarrolló un sistema completamente funcional que cumple con todos los objetivos
+                                    planteados.</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-brain"></i>
+                                <h4>IA Integrada</h4>
+                                <p>Implementación exitosa de algoritmos de inteligencia artificial para diagnóstico
+                                    predictivo.</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Operación Segura</h4>
+                                <p>Todas las acciones son verificadas y seguras, sin riesgo de daño al sistema.</p>
+                            </div>
+                            <div class="achievement-item">
+                                <i class="fas fa-users"></i>
+                                <h4>Interfaz Intuitiva</h4>
+                                <p>Diseño moderno y fácil de usar, accesible para usuarios de cualquier nivel técnico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>11.2 Lecciones Aprendidas</h3>
+                        <ul>
+                            <li>La <strong>modularización del código</strong> facilitó el desarrollo y las pruebas</li>
+                            <li>El uso de <strong>PySide6</strong> permitió crear una interfaz profesional y responsive
+                            </li>
+                            <li>Las <strong>pruebas automatizadas</strong> fueron fundamentales para garantizar la
+                                calidad</li>
+                            <li>La <strong>documentación continua</strong> aceleró el proceso de desarrollo</li>
+                        </ul>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>11.3 Trabajo Futuro</h3>
+                        <div class="future-work">
+                            <div class="future-item">
+                                <h4><i class="fas fa-cloud me-2"></i>Versión Cloud</h4>
+                                <p>Implementar soporte para monitoreo remoto y gestión centralizada de múltiples
+                                    equipos.
+                                </p>
+                            </div>
+                            <div class="future-item">
+                                <h4><i class="fas fa-mobile-alt me-2"></i>Aplicación Móvil</h4>
+                                <p>Desarrollar app móvil para monitoreo y control remoto del sistema.</p>
+                            </div>
+                            <div class="future-item">
+                                <h4><i class="fas fa-robot me-2"></i>IA Avanzada</h4>
+                                <p>Integrar modelos de deep learning para predicción más precisa de problemas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 12. REFERENCIAS -->
+                <section id="referencias" class="doc-section">
+                    <h2 class="section-title">12. Referencias</h2>
+
+                    <div class="subsection">
+                        <h3>12.1 Documentación Técnica</h3>
+                        <ol class="references-list">
+                            <li>Python Software Foundation. (2024). <em>Python 3.8 Documentation</em>. <a
+                                    href="https://docs.python.org/3.8/" target="_blank">https://docs.python.org/3.8/</a>
+                            </li>
+                            <li>Qt Company. (2024). <em>PySide6 Documentation</em>. <a
+                                    href="https://doc.qt.io/qtforpython-6/"
+                                    target="_blank">https://doc.qt.io/qtforpython-6/</a></li>
+                            <li>Giampaolo Rodola. (2024). <em>psutil Documentation</em>. <a
+                                    href="https://psutil.readthedocs.io/"
+                                    target="_blank">https://psutil.readthedocs.io/</a>
+                            </li>
+                            <li>Microsoft. (2024). <em>Windows API Documentation</em>. <a
+                                    href="https://learn.microsoft.com/en-us/windows/win32/"
+                                    target="_blank">https://learn.microsoft.com/en-us/windows/win32/</a></li>
+                        </ol>
+                    </div>
+
+                    <div class="subsection">
+                        <h3>12.2 Recursos Adicionales</h3>
+                        <ul class="resources-list">
+                            <li><i class="fab fa-github"></i> <strong>Repositorio del Proyecto:</strong> WinDoctorIA
+                            </li>
+                            <li><i class="fas fa-book"></i> <strong>Manual de Usuario:</strong> Disponible en la carpeta
+                                docs/</li>
+                            <li><i class="fas fa-video"></i> <strong>Video Tutorial:</strong> Próximamente</li>
+                        </ul>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="doc-footer">
+        <div class="container text-center">
+            <p>&copy; 2025 WinDoctorIA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default'
+        });
+
+        // Initialize Charts
+        document.addEventListener('DOMContentLoaded', function () {
+            // Coverage Chart
+            const ctxCoverage = document.getElementById('coverageChart').getContext('2d');
+            new Chart(ctxCoverage, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Unitarias', 'Integración', 'Sistema'],
+                    datasets: [{
+                        data: [85, 90, 95],
+                        backgroundColor: [
+                            '#4e73df',
+                            '#1cc88a',
+                            '#36b9cc'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                        }
+                    }
+                }
+            });
+
+            // Performance Chart
+            const ctxPerf = document.getElementById('performanceChart').getContext('2d');
+            new Chart(ctxPerf, {
+                type: 'bar',
+                data: {
+                    labels: ['Manual', 'WinDoctorIA'],
+                    datasets: [{
+                        label: 'Tiempo de Resolución (min)',
+                        data: [45, 2],
+                        backgroundColor: [
+                            '#e74a3b',
+                            '#1cc88a'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+
+        // Export to PDF function (placeholder)
+        function exportToPDF() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

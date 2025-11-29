@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WinDoctorIA - Sistema de diagnóstico y reparación inteligente para Windows con IA avanzada">
+    <meta name="keywords" content="Windows, diagnóstico, reparación, IA, optimización, sistema">
+    <title>WinDoctorIA - Diagnóstico Inteligente para Windows</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-stethoscope me-2"></i>
+                <span class="brand-text">WinDoctorIA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">Cómo Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">Descargar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/documentación.html">Documentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-contact" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 hero-content">
+                    <div class="badge-pill mb-4">
+                        <i class="fas fa-robot me-2"></i>
+                        Potenciado por Inteligencia Artificial
+                    </div>
+                    <h1 class="hero-title">
+                        Diagnóstico y Reparación <span class="gradient-text">Inteligente</span> para Windows
+                    </h1>
+                    <p class="hero-subtitle">
+                        Solución de diagnóstico automático que detecta y resuelve problemas de rendimiento
+                        en tiempo real. Optimiza tu sistema con un solo clic.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#download" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-download me-2"></i>
+                            Descargar Ahora
+                        </a>
+                        <a href="#how-it-works" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-play-circle me-2"></i>
+                            Ver Demo
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="10000">0</div>
+                            <div class="stat-label">Usuarios Activos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="99">0</div>
+                            <div class="stat-label">% Efectividad</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="24">0</div>
+                            <div class="stat-label">Soporte 24/7</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-microchip"></i>
+                            <span>CPU Optimizada</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-memory"></i>
+                            <span>RAM Liberada</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Sistema Seguro</span>
+                        </div>
+                        <div class="hero-mockup">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#features">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Características Principales</div>
+                <h2 class="section-title">Tecnología de <span class="gradient-text">Última Generación</span></h2>
+                <p class="section-subtitle">Soluciones inteligentes diseñadas para empresas y profesionales que exigen
+                    lo mejor</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>IA</h3>
+                        <p>Motor de inteligencia artificial que aprende de tu sistema y predice problemas antes de que
+                            ocurran.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Diagnóstico predictivo</li>
+                            <li><i class="fas fa-check"></i> Aprendizaje continuo</li>
+                            <li><i class="fas fa-check"></i> Análisis en tiempo real</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card featured">
+                        <div class="feature-badge">Más Popular</div>
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Resolución Automática</h3>
+                        <p>Un solo clic para resolver problemas de CPU, RAM, disco y red sin intervención manual.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Optimización con 1 clic</li>
+                            <li><i class="fas fa-check"></i> Acciones seguras verificadas</li>
+                            <li><i class="fas fa-check"></i> Resultados inmediatos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Monitoreo en Vivo</h3>
+                        <p>Visualiza el rendimiento de tu sistema en tiempo real con gráficos interactivos y alertas
+                            inteligentes.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Dashboard en tiempo real</li>
+                            <li><i class="fas fa-check"></i> Alertas personalizables</li>
+                            <li><i class="fas fa-check"></i> Historial detallado</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Reportes Profesionales</h3>
+                        <p>Genera reportes detallados en PDF/TXT para auditorías y documentación técnica.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Exportación PDF/TXT</li>
+                            <li><i class="fas fa-check"></i> Análisis detallado</li>
+                            <li><i class="fas fa-check"></i> Gráficos incluidos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h3>Detección de Malware</h3>
+                        <p>Escaneo avanzado de procesos sospechosos con análisis heurístico y base de datos actualizada.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Análisis heurístico</li>
+                            <li><i class="fas fa-check"></i> Limpieza automática</li>
+                            <li><i class="fas fa-check"></i> Protección en tiempo real</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Interfaz Moderna</h3>
+                        <p>Diseño intuitivo con tema claro/oscuro, transiciones fluidas y experiencia de usuario
+                            premium.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Tema oscuro</li>
+                            <li><i class="fas fa-check"></i> Diseño responsive</li>
+                            <li><i class="fas fa-check"></i> Animaciones suaves</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Proceso Simple</div>
+                <h2 class="section-title">Cómo Funciona <span class="gradient-text">WinDoctorIA</span></h2>
+                <p class="section-subtitle">Tres pasos simples para un sistema optimizado</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Descarga e Instala</h3>
+                        <p>Descarga WinDoctorIA de forma gratuita. Instalación rápida en menos de 2 minutos sin
+                            configuración compleja.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Escanea tu Sistema</h3>
+                        <p>La IA analiza automáticamente CPU, RAM, disco, red y detecta problemas en tiempo real con
+                            precisión del 99%.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Resuelve con 1 Clic</h3>
+                        <p>Presiona "Resolver Automáticamente" y deja que la IA optimice tu sistema de forma segura y
+                            eficiente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="pruebas.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-rocket me-2"></i>
+                    Demostración
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Planes y Precios</div>
+                <h2 class="section-title">Elige el Plan <span class="gradient-text">Perfecto</span> para Ti</h2>
+                <p class="section-subtitle">Soluciones flexibles para individuos y empresas</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Personal</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">0</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <p>Perfecto para uso personal</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Diagnóstico básico</li>
+                            <li><i class="fas fa-check"></i> Resolución automática</li>
+                            <li><i class="fas fa-check"></i> Monitoreo en tiempo real</li>
+                            <li><i class="fas fa-check"></i> Reportes básicos</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Soporte prioritario</li>
+                            <li class="disabled"><i class="fas fa-times"></i> IA avanzada</li>
+                        </ul>
+                        <a href="#download" class="btn btn-outline-primary w-100">Descargar Gratis</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Recomendado</div>
+                        <div class="pricing-header">
+                            <h3>Profesional</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">29</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <p>Para profesionales y pequeñas empresas</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Todo lo de Personal</li>
+                            <li><i class="fas fa-check"></i> IA avanzada predictiva</li>
+                            <li><i class="fas fa-check"></i> Reportes profesionales PDF</li>
+                            <li><i class="fas fa-check"></i> Detección de malware</li>
+                            <li><i class="fas fa-check"></i> Soporte prioritario 24/7</li>
+                            <li><i class="fas fa-check"></i> Actualizaciones automáticas</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary w-100">Comenzar Prueba</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Empresarial</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">99</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <p>Solución completa para empresas</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Todo lo de Profesional</li>
+                            <li><i class="fas fa-check"></i> Licencias múltiples</li>
+                            <li><i class="fas fa-check"></i> Dashboard centralizado</li>
+                            <li><i class="fas fa-check"></i> API de integración</li>
+                            <li><i class="fas fa-check"></i> Soporte dedicado</li>
+                            <li><i class="fas fa-check"></i> Personalización avanzada</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline-primary w-100">Contactar Ventas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section-badge">Descarga Gratuita</div>
+                    <h2 class="section-title">Comienza a Optimizar tu Sistema <span class="gradient-text">Hoy
+                            Mismo</span></h2>
+                    <p class="section-subtitle mb-4">Compatible con Windows 10 y 11. Instalación rápida y sin
+                        complicaciones.</p>
+
+                    <div class="download-buttons mb-4">
+                        <a href="#" class="btn btn-primary btn-lg me-3">
+                            <i class="fab fa-windows me-2"></i>
+                            Descargar para Windows
+                        </a>
+                        <div class="download-info mt-3">
+                            <small><i class="fas fa-info-circle me-2"></i>Versión 1.0.0 | 200 MB | Actualizado: Nov
+                                2025</small>
+                        </div>
+                    </div>
+
+                    <div class="system-requirements">
+                        <h4><i class="fas fa-cog me-2"></i>Requisitos del Sistema</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="requirement-item">
+                                    <i class="fas fa-desktop"></i>
+                                    <div>
+                                        <strong>Sistema Operativo</strong>
+                                        <p>Windows 10/11 (64-bit)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="requirement-item">
+                                    <i class="fas fa-memory"></i>
+                                    <div>
+                                        <strong>RAM</strong>
+                                        <p>4 GB mínimo</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="requirement-item">
+                                    <i class="fas fa-hdd"></i>
+                                    <div>
+                                        <strong>Espacio en Disco</strong>
+                                        <p>200 MB libres</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="requirement-item">
+                                    <i class="fas fa-code"></i>
+                                    <div>
+                                        <strong>Python</strong>
+                                        <p>3.8 o superior</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="download-visual">
+                        <div class="download-card">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Instalación Verificada</h4>
+                            <p>Software certificado y libre de malware</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <div class="section-badge">Contáctanos</div>
+                <h2 class="section-title">¿Tienes Preguntas? <span class="gradient-text">Estamos Aquí</span></h2>
+                <p class="section-subtitle">Nuestro equipo está listo para ayudarte</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>support@windoctoria.com</p>
+                        <a href="mailto:support@windoctoria.com">Enviar Email</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Teléfono</h4>
+                        <p>+1 (555) 123-4567</p>
+                        <a href="tel:+15551234567">Llamar Ahora</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Chat en Vivo</h4>
+                        <p>Disponible 24/7</p>
+                        <a href="#">Iniciar Chat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-stethoscope me-2"></i>
+                        <span>WinDoctorIA</span>
+                    </div>
+                    <p class="footer-description">
+                        Solución empresarial de diagnóstico y reparación inteligente para Windows. Potenciado por IA
+                        avanzada.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Producto</h5>
+                    <ul class="footer-links">
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#pricing">Precios</a></li>
+                        <li><a href="#download">Descargar</a></li>
+                        <li><a href="documentación.html">Documentación</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreras</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Soporte</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Centro de Ayuda</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="pruebas.html">Tutoriales</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h5>Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="#">Términos</a></li>
+                        <li><a href="#">Licencia</a></li>
+                        <li><a href="#">Seguridad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 WinDoctorIA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
