@@ -39,8 +39,8 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <h1 class="doc-title"><i class="fas fa-stethoscope me-2"></i>WinDoctorIA</h1>
-                    <p class="doc-subtitle">Documentación Técnica Profesional</p>
+                    <h1 class="doc-title"><i class="fas fa-laptop-medical"></i>WinDoctorIA</h1>
+                    <p class="doc-subtitle">Documentación Técnica</p>
                 </div>
                 <div class="col-md-6 text-end">
                     <a class="btn btn-outline-primary btn-sm me-2" href="index.html">
@@ -74,10 +74,9 @@
                         <li class="nav-item"><a class="nav-link" href="#arquitectura">6. Arquitectura</a></li>
                         <li class="nav-item"><a class="nav-link" href="#tecnologias">7. Tecnologías</a></li>
                         <li class="nav-item"><a class="nav-link" href="#funcionalidades">8. Funcionalidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#implementacion">9. Implementación</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pruebas">10. Pruebas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#conclusiones">11. Conclusiones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#referencias">12. Referencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pruebas">9. Pruebas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusiones">10. Conclusiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#referencias">11. Referencias</a></li>
                     </ul>
                 </div>
             </nav>
@@ -89,7 +88,7 @@
                 <section id="portada" class="doc-section cover-page">
                     <div class="text-center py-5">
                         <div class="cover-logo mb-4">
-                            <i class="fas fa-stethoscope"></i>
+                            <i class="fas fa-laptop-medical"></i>
                         </div>
                         <h1 class="display-3 fw-bold mb-3">WinDoctorIA</h1>
                         <h2 class="h3 text-muted mb-4">Sistema de Diagnóstico y Reparación Inteligente para Windows</h2>
@@ -458,39 +457,7 @@ graph TB
                     </div>
 
                     <div class="subsection">
-                        <h3>6.3 Flujo de Datos</h3>
-                        <div class="diagram-container">
-                            <pre class="mermaid">
-sequenceDiagram
-    participant U as Usuario
-    participant GUI as Interfaz
-    participant IA as Motor IA
-    participant Diag as Diagnóstico
-    participant Rep as Reparador
-    participant OS as Sistema
-    
-    U->>GUI: Solicita diagnóstico
-    GUI->>Diag: Analizar sistema
-    Diag->>OS: Obtener métricas
-    OS-->>Diag: CPU, RAM, Disco, Red
-    Diag->>IA: Evaluar métricas
-    IA-->>Diag: Problemas detectados
-    Diag-->>GUI: Mostrar resultados
-    GUI-->>U: Visualizar problemas
-    
-    U->>GUI: Resolver automáticamente
-    GUI->>IA: Generar plan de acción
-    IA->>Rep: Ejecutar reparaciones
-    Rep->>OS: Aplicar cambios
-    OS-->>Rep: Confirmación
-    Rep-->>GUI: Resultados
-    GUI-->>U: Mostrar éxito
-                            </pre>
-                        </div>
-                    </div>
-
-                    <div class="subsection">
-                        <h3>6.4 Patrones de Diseño</h3>
+                        <h3>6.3 Patrones de Diseño</h3>
                         <ul>
                             <li><strong>MVC (Model-View-Controller):</strong> Separación de lógica de negocio y
                                 presentación</li>
@@ -561,14 +528,15 @@ sequenceDiagram
 
                     <div class="subsection">
                         <h3>7.2 Dependencias Completas</h3>
-                        <pre><code class="language-python"># requirements.txt
-PySide6==6.6.0
-psutil==5.9.0
-reportlab==4.0.7
-qtawesome
-winshell
-pythoncom
-pywin32</code></pre>
+                        <pre><code class="language-python">
+                            PySide6
+                            psutil
+                            reportlab
+                            qtawesome
+                            winshell
+                            pythoncom
+                            pywin32
+                        </code></pre>
                     </div>
                 </section>
 
@@ -634,104 +602,9 @@ pywin32</code></pre>
                     </div>
                 </section>
 
-                <!-- 9. IMPLEMENTACIÓN -->
-                <section id="implementacion" class="doc-section">
-                    <h2 class="section-title">9. Implementación</h2>
-
-                    <div class="subsection">
-                        <h3>9.1 Estructura del Código</h3>
-                        <pre><code class="language-python"># Estructura del proyecto
-WinDoctorIA/
-├── main.py                          # Punto de entrada
-├── gui/
-│   ├── layout_main.py               # Ventana principal
-│   ├── panel_inicio.py              # Dashboard con gráficos profesionales
-│   ├── panel_diagnostico.py         # Análisis del sistema
-│   ├── panel_asistente.py           # Chat con IA
-│   ├── panel_reparaciones.py        # Gestor de Inicio
-│   ├── panel_monitor.py             # Monitoreo en tiempo real
-│   ├── panel_duplicados.py          # Buscador de duplicados
-│   ├── dialogo_programas_inicio.py  # Diálogo de programas de inicio
-│   └── widgets_monitor.py           # Widgets personalizados
-├── core/
-│   ├── ia_engine.py                 # Motor de IA
-│   ├── sistema.py                   # Métricas del sistema (psutil)
-│   ├── reparador.py                 # Acciones de optimización
-│   ├── duplicados.py                # Detección de duplicados (SHA-256)
-│   └── monitor.py                   # Servicio de monitoreo
-└── utils/
-    └── generador_pdf.py             # Generación de reportes</code></pre>
-                    </div>
-
-                    <div class="subsection">
-                        <h3>9.2 Algoritmo de Detección de Duplicados</h3>
-                        <pre><code class="language-python">def buscar_duplicados(self, directorio):
-    """Algoritmo eficiente de 3 etapas para detectar duplicados"""
-    # Etapa 1: Agrupar por tamaño
-    archivos_por_tamano = {}
-    for archivo in Path(directorio).rglob('*'):
-        if archivo.is_file():
-            tamano = archivo.stat().st_size
-            archivos_por_tamano.setdefault(tamano, []).append(archivo)
-    
-    # Etapa 2: Hash parcial (primeros 8KB)
-    candidatos = {}
-    for archivos in archivos_por_tamano.values():
-        if len(archivos) > 1:
-            for archivo in archivos:
-                hash_parcial = self._hash_parcial(archivo)
-                candidatos.setdefault(hash_parcial, []).append(archivo)
-    
-    # Etapa 3: Hash completo (SHA-256)
-    duplicados = {}
-    for archivos in candidatos.values():
-        if len(archivos) > 1:
-            for archivo in archivos:
-                hash_completo = self._hash_completo(archivo)
-                duplicados.setdefault(hash_completo, []).append(archivo)
-    
-    return {k: v for k, v in duplicados.items() if len(v) > 1}</code></pre>
-                    </div>
-
-                    <div class="subsection">
-                        <h3>9.3 Integración con API de Windows</h3>
-                        <pre><code class="language-python"># Elevación UAC automática
-def _ejecutar_elevado(self, comando):
-    """Ejecuta comando con privilegios de administrador"""
-    ret = ctypes.windll.shell32.ShellExecuteW(
-        None, "runas", "cmd.exe", f'/c {comando}',
-        None, 0  # SW_HIDE
-    )
-    return ret > 32  # Éxito si > 32
-
-# Enviar a Papelera de Reciclaje (nativo)
-def eliminar_archivo(self, ruta):
-    """Envía archivo a la papelera usando SHFileOperationW"""
-    class SHFILEOPSTRUCT(ctypes.Structure):
-        _fields_ = [
-            ("hwnd", wintypes.HWND),
-            ("wFunc", wintypes.UINT),
-            ("pFrom", wintypes.LPCWSTR),
-            ("pTo", wintypes.LPCWSTR),
-            ("fFlags", wintypes.WORD),
-            ("fAnyOperationsAborted", wintypes.BOOL),
-            ("hNameMappings", wintypes.LPVOID),
-            ("lpszProgressTitle", wintypes.LPCWSTR)
-        ]
-    
-    fileop = SHFILEOPSTRUCT()
-    fileop.wFunc = 3  # FO_DELETE
-    fileop.pFrom = ruta + '\0'
-    fileop.fFlags = 0x0040 | 0x0010  # FOF_ALLOWUNDO | FOF_NOCONFIRMATION
-    
-    result = ctypes.windll.shell32.SHFileOperationW(ctypes.byref(fileop))
-    return result == 0</code></pre>
-                    </div>
-                </section>
-
-                <!-- 10. PRUEBAS Y VALIDACIÓN -->
+                <!-- 9. PRUEBAS Y VALIDACIÓN -->
                 <section id="pruebas" class="doc-section">
-                    <h2 class="section-title">10. Pruebas y Validación</h2>
+                    <h2 class="section-title">9. Pruebas y Validación</h2>
 
                     <div class="subsection">
                         <h3>10.1 Metodología de Pruebas</h3>
@@ -739,12 +612,12 @@ def eliminar_archivo(self, ruta):
                     </div>
                 </section>
 
-                <!-- 11. CONCLUSIONES -->
+                <!-- 10. CONCLUSIONES -->
                 <section id="conclusiones" class="doc-section">
-                    <h2 class="section-title">11. Conclusiones</h2>
+                    <h2 class="section-title">10. Conclusiones</h2>
 
                     <div class="subsection">
-                        <h3>11.1 Logros Alcanzados</h3>
+                        <h3>10.1 Logros Alcanzados</h3>
                         <div class="achievement-grid">
                             <div class="achievement-item">
                                 <i class="fas fa-trophy"></i>
@@ -773,7 +646,7 @@ def eliminar_archivo(self, ruta):
                     </div>
 
                     <div class="subsection">
-                        <h3>11.2 Lecciones Aprendidas</h3>
+                        <h3>10.2 Lecciones Aprendidas</h3>
                         <ul>
                             <li>La <strong>modularización del código</strong> facilitó el desarrollo y las pruebas</li>
                             <li>El uso de <strong>PySide6</strong> permitió crear una interfaz profesional y responsive
@@ -785,7 +658,7 @@ def eliminar_archivo(self, ruta):
                     </div>
 
                     <div class="subsection">
-                        <h3>11.3 Trabajo Futuro</h3>
+                        <h3>10.3 Trabajo Futuro</h3>
                         <div class="future-work">
                             <div class="future-item">
                                 <h4><i class="fas fa-cloud me-2"></i>Versión Cloud</h4>
@@ -805,7 +678,7 @@ def eliminar_archivo(self, ruta):
                     </div>
                 </section>
 
-                <!-- 12. REFERENCIAS -->
+                <!-- 11. REFERENCIAS -->
                 <section id="referencias" class="doc-section">
                     <h2 class="section-title">12. Referencias</h2>
 
@@ -826,17 +699,6 @@ def eliminar_archivo(self, ruta):
                                     href="https://learn.microsoft.com/en-us/windows/win32/"
                                     target="_blank">https://learn.microsoft.com/en-us/windows/win32/</a></li>
                         </ol>
-                    </div>
-
-                    <div class="subsection">
-                        <h3>12.2 Recursos Adicionales</h3>
-                        <ul class="resources-list">
-                            <li><i class="fab fa-github"></i> <strong>Repositorio del Proyecto:</strong> WinDoctorIA
-                            </li>
-                            <li><i class="fas fa-book"></i> <strong>Manual de Usuario:</strong> Disponible en la carpeta
-                                docs/</li>
-                            <li><i class="fas fa-video"></i> <strong>Video Tutorial:</strong> Próximamente</li>
-                        </ul>
                     </div>
                 </section>
 
