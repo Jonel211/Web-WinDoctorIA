@@ -70,13 +70,12 @@
                         <li class="nav-item"><a class="nav-link" href="#objetivos">2. Objetivos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#problematica">3. Problemática</a></li>
                         <li class="nav-item"><a class="nav-link" href="#importancia">4. Importancia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#marco-teorico">5. Marco Teórico</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#arquitectura">6. Arquitectura</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#tecnologias">7. Tecnologías</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#funcionalidades">8. Funcionalidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#pruebas">9. Pruebas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#conclusiones">10. Conclusiones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#referencias">11. Referencias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#arquitectura">5. Arquitectura</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tecnologias">6. Tecnologías</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#funcionalidades">7. Funcionalidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#pruebas">8. Pruebas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#conclusiones">9. Conclusiones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#referencias">10. Referencias</a></li>
                     </ul>
                 </div>
             </nav>
@@ -100,17 +99,16 @@
                             <p class="lead">
                                 WinDoctorIA es un sistema inteligente de diagnóstico y reparación automática para
                                 sistemas operativos Windows,
-                                desarrollado con tecnologías de inteligencia artificial y aprendizaje automático. El
+                                desarrollado con python. El
                                 sistema permite detectar,
                                 diagnosticar y resolver problemas de rendimiento (CPU, RAM, disco, red) de forma
                                 automática y segura,
-                                reduciendo significativamente los tiempos de resolución y los costos de soporte técnico.
+                                reduciendo significativamente los tiempos de resolución.
                             </p>
                             <p>
-                                Este documento presenta la documentación técnica completa del proyecto, incluyendo
+                                Este documento presenta la documentación técnica del proyecto, incluyendo
                                 objetivos, arquitectura,
-                                tecnologías utilizadas, procesos de desarrollo, pruebas realizadas y resultados
-                                obtenidos.
+                                tecnologías utilizadas, procesos de desarrollo y pruebas realizadas.
                             </p>
                         </div>
                     </div>
@@ -126,7 +124,7 @@
                             <p>
                                 Desarrollar un sistema inteligente de diagnóstico y reparación automática para sistemas
                                 operativos Windows
-                                que utilice algoritmos de inteligencia artificial para detectar, analizar y resolver
+                                para detectar, analizar y resolver
                                 problemas de rendimiento
                                 de forma segura, eficiente y sin intervención manual del usuario.
                             </p>
@@ -140,12 +138,12 @@
                                 <strong>Implementar un motor de diagnóstico inteligente</strong> capaz de analizar en
                                 tiempo real
                                 el estado del sistema (CPU, RAM, disco, red, temperatura) y detectar anomalías de
-                                rendimiento mediante algoritmos de IA.
+                                rendimiento.
                             </li>
                             <li>
-                                <strong>Desarrollar un Gestor de Inicio Avanzado</strong> que optimice el arranque de
-                                Windows mediante escaneo exhaustivo del Registro (HKCU/HKLM/WOW6432Node) y carpetas de
-                                inicio, con elevación UAC automática para modificaciones privilegiadas.
+                                <strong>Desarrollar un Gestor de Inicio</strong> que optimice el arranque de
+                                Windows y carpetas de
+                                inicio.
                             </li>
                             <li>
                                 <strong>Implementar un Buscador de Duplicados eficiente</strong> utilizando algoritmo
@@ -157,11 +155,6 @@
                                 estado
                                 del sistema, problemas detectados y acciones realizadas.
                             </li>
-                            <li>
-                                <strong>Validar la efectividad del sistema</strong> mediante pruebas exhaustivas que
-                                demuestren
-                                su capacidad para resolver problemas reales de rendimiento.
-                            </li>
                         </ol>
                     </div>
 
@@ -172,7 +165,6 @@
                                 <h4><i class="fas fa-check-circle"></i> Incluido</h4>
                                 <ul>
                                     <li>Diagnóstico de CPU, RAM, disco, red y temperatura</li>
-                                    <li>Gestor de Inicio con elevación UAC automática</li>
                                     <li>Buscador de Duplicados con hashing SHA-256</li>
                                     <li>Dashboard con gráficos GPU accelerated</li>
                                     <li>Integración nativa con API de Windows (ctypes)</li>
@@ -214,7 +206,8 @@
                         <ul>
                             <li>3-5 problemas de rendimiento por mes</li>
                             <li>2-4 horas perdidas mensualmente en diagnóstico y resolución</li>
-                            <li>Costos de soporte técnico de $50-150 USD por incidente</li>
+                            <li>Falta de monitoreo proactivo del estado del sistema</li>
+                            <li>Difícil acceso a reportes técnicos profesionales</li>
                         </ul>
                     </div>
 
@@ -259,8 +252,6 @@
                                 </li>
                                 <li><strong>Tiempo de diagnóstico:</strong> Identificar la causa raíz puede tomar horas
                                 </li>
-                                <li><strong>Costos de soporte:</strong> Contratar técnicos especializados es costoso
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -274,25 +265,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="benefit-box">
-                                    <h4><i class="fas fa-user me-2"></i>Usuarios Individuales</h4>
+                                    <h4><i class="fas fa-user me-2"></i>Usuarios</h4>
                                     <ul>
                                         <li>Resolución inmediata sin conocimientos técnicos</li>
-                                        <li>Ahorro de tiempo y dinero en soporte</li>
+                                        <li>Ahorro de tiempo</li>
                                         <li>Sistema más rápido y estable</li>
                                         <li>Prevención de problemas futuros</li>
                                         <li>Interfaz fácil de usar</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="benefit-box">
-                                    <h4><i class="fas fa-building me-2"></i>Empresas</h4>
-                                    <ul>
-                                        <li>Reducción de tickets de soporte técnico</li>
-                                        <li>Mayor productividad de empleados</li>
-                                        <li>Menor tiempo de inactividad</li>
-                                        <li>Reportes detallados para auditorías</li>
-                                        <li>Escalabilidad a múltiples equipos</li>
                                     </ul>
                                 </div>
                             </div>
@@ -305,8 +284,7 @@
                             WinDoctorIA representa una innovación significativa al combinar:
                         </p>
                         <ul class="innovation-list">
-                            <li><i class="fas fa-brain"></i> <strong>Inteligencia Artificial:</strong> Diagnóstico
-                                predictivo y aprendizaje continuo</li>
+                            <li><i class="fas fa-brain"></i> <strong>Inteligencia Artificial:</strong> Diagnóstico y aprendizaje continuo</li>
                             <li><i class="fas fa-shield-alt"></i> <strong>Seguridad:</strong> Solo ejecuta acciones
                                 verificadas y seguras</li>
                             <li><i class="fas fa-bolt"></i> <strong>Automatización:</strong> Resolución con un solo clic
@@ -319,55 +297,12 @@
                     </div>
                 </section>
 
-                <!-- 5. MARCO TEÓRICO -->
-                <section id="marco-teorico" class="doc-section">
-                    <h2 class="section-title">5. Marco Teórico</h2>
-
-                    <div class="subsection">
-                        <h3>5.1 Conceptos Fundamentales</h3>
-
-                        <div class="concept-box">
-                            <h4>Diagnóstico de Sistemas</h4>
-                            <p>
-                                El diagnóstico de sistemas es el proceso de identificar y analizar problemas en el
-                                funcionamiento
-                                de un sistema informático mediante la recopilación de métricas, análisis de
-                                comportamiento y
-                                comparación con estados óptimos conocidos.
-                            </p>
-                        </div>
-
-                        <div class="concept-box">
-                            <h4>Inteligencia Artificial en Sistemas</h4>
-                            <p>
-                                La aplicación de IA en diagnóstico de sistemas permite:
-                            </p>
-                            <ul>
-                                <li><strong>Detección de patrones:</strong> Identificar comportamientos anómalos</li>
-                                <li><strong>Predicción:</strong> Anticipar problemas antes de que ocurran</li>
-                                <li><strong>Clasificación:</strong> Categorizar problemas por tipo y severidad</li>
-                                <li><strong>Optimización:</strong> Sugerir acciones correctivas óptimas</li>
-                            </ul>
-                        </div>
-
-                        <div class="concept-box">
-                            <h4>Análisis Heurístico</h4>
-                            <p>
-                                Técnica de detección de malware que analiza el comportamiento de procesos en lugar de
-                                depender
-                                únicamente de firmas conocidas. Permite detectar amenazas nuevas o variantes de malware
-                                existente.
-                            </p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 6. ARQUITECTURA DEL SISTEMA -->
+                <!-- 5. ARQUITECTURA DEL SISTEMA -->
                 <section id="arquitectura" class="doc-section">
-                    <h2 class="section-title">6. Arquitectura del Sistema</h2>
+                    <h2 class="section-title">5. Arquitectura del Sistema</h2>
 
                     <div class="subsection">
-                        <h3>6.1 Diagrama de Arquitectura</h3>
+                        <h3>5.1 Diagrama de Arquitectura</h3>
                         <div class="diagram-container">
                             <pre class="mermaid">
                                 graph TB
@@ -407,7 +342,7 @@
                     </div>
 
                     <div class="subsection">
-                        <h3>6.2 Componentes Principales</h3>
+                        <h3>5.2 Componentes Principales</h3>
                         <div class="component-list">
                             <div class="component-item">
                                 <h4><i class="fas fa-desktop"></i> Capa de Presentación</h4>
@@ -455,28 +390,14 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="subsection">
-                        <h3>6.3 Patrones de Diseño</h3>
-                        <ul>
-                            <li><strong>MVC (Model-View-Controller):</strong> Separación de lógica de negocio y
-                                presentación</li>
-                            <li><strong>Observer:</strong> Actualización automática de la interfaz ante cambios de
-                                estado</li>
-                            <li><strong>Strategy:</strong> Diferentes algoritmos de diagnóstico según el tipo de
-                                problema</li>
-                            <li><strong>Factory:</strong> Creación de paneles y componentes de interfaz</li>
-                            <li><strong>Singleton:</strong> Instancia única del sistema de diagnóstico</li>
-                        </ul>
-                    </div>
                 </section>
 
-                <!-- 7. TECNOLOGÍAS UTILIZADAS -->
+                <!-- 6. TECNOLOGÍAS UTILIZADAS -->
                 <section id="tecnologias" class="doc-section">
-                    <h2 class="section-title">7. Tecnologías Utilizadas</h2>
+                    <h2 class="section-title">6. Tecnologías Utilizadas</h2>
 
                     <div class="subsection">
-                        <h3>7.1 Stack Tecnológico</h3>
+                        <h3>6.1 Stack Tecnológico</h3>
                         <div class="row g-4">
                             <div class="col-md-6">
                                 <div class="tech-card">
@@ -519,7 +440,6 @@
                                     <ul>
                                         <li><strong>Git:</strong> Control de versiones distribuido</li>
                                         <li><strong>VS Code:</strong> Editor de código principal</li>
-                                        <li><strong>PowerShell:</strong> Scripts de automatización</li>
                                     </ul>
                                 </div>
                             </div>
@@ -527,7 +447,7 @@
                     </div>
 
                     <div class="subsection">
-                        <h3>7.2 Dependencias Completas</h3>
+                        <h3>6.2 Dependencias Completas</h3>
                         <pre><code class="language-python">
                             PySide6
                             psutil
@@ -540,28 +460,26 @@
                     </div>
                 </section>
 
-                <!-- 8. FUNCIONALIDADES PRINCIPALES -->
+                <!-- 7. FUNCIONALIDADES PRINCIPALES -->
                 <section id="funcionalidades" class="doc-section">
-                    <h2 class="section-title">8. Funcionalidades Principales</h2>
+                    <h2 class="section-title">7. Funcionalidades Principales</h2>
 
                     <div class="subsection">
-                        <h3>8.1 Módulos del Sistema</h3>
+                        <h3>7.1 Módulos del Sistema</h3>
                         <div class="row g-4">
                             <div class="col-md-4">
                                 <div class="feature-card-doc">
                                     <div class="feature-number">01</div>
                                     <h4>Diagnóstico Inteligente</h4>
                                     <p>Análisis en tiempo real de CPU, RAM, disco, red y temperatura con detección
-                                        automática de anomalías mediante algoritmos de IA.</p>
+                                        automática de anomalías.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="feature-card-doc">
                                     <div class="feature-number">02</div>
-                                    <h4>Gestor de Inicio Avanzado</h4>
-                                    <p>Optimización del arranque de Windows mediante escaneo exhaustivo del Registro
-                                        (HKCU/HKLM/WOW6432Node) y carpetas de inicio, con elevación UAC automática para
-                                        modificaciones privilegiadas.</p>
+                                    <h4>Gestor de Inicio</h4>
+                                    <p>Optimización del arranque de Windows mediante escaneo exhaustivo del Registro y carpetas de inicio.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -576,7 +494,7 @@
                             <div class="col-md-4">
                                 <div class="feature-card-doc">
                                     <div class="feature-number">04</div>
-                                    <h4>Monitoreo Visual Profesional</h4>
+                                    <h4>Monitoreo Visual</h4>
                                     <p>Dashboard con gráficos de alto rendimiento (GPU accelerated) usando QPainter,
                                         gradientes cónicos y efectos modernos para visualización de métricas en tiempo
                                         real.</p>
@@ -602,12 +520,12 @@
                     </div>
                 </section>
 
-                <!-- 9. PRUEBAS Y VALIDACIÓN -->
+                <!-- 8. PRUEBAS Y VALIDACIÓN -->
                 <section id="pruebas" class="doc-section">
-                    <h2 class="section-title">9. Pruebas y Validación</h2>
+                    <h2 class="section-title">8. Pruebas y Validación</h2>
 
                     <div class="subsection">
-                        <h3>9.1 Metodología de Pruebas</h3>
+                        <h3>8.1 Metodología de Pruebas</h3>
                         <p>En la pagina principal se muestra la funcionalidad de la herramienta.</p>
                     </div>
                     <div class="text-center mt-5">
@@ -618,24 +536,23 @@
                     </div>
                 </section>
 
-                <!-- 10. CONCLUSIONES -->
+                <!-- 9. CONCLUSIONES -->
                 <section id="conclusiones" class="doc-section">
-                    <h2 class="section-title">10. Conclusiones</h2>
+                    <h2 class="section-title">9. Conclusiones</h2>
 
                     <div class="subsection">
-                        <h3>10.1 Logros Alcanzados</h3>
+                        <h3>9.1 Logros Alcanzados</h3>
                         <div class="achievement-grid">
                             <div class="achievement-item">
                                 <i class="fas fa-trophy"></i>
-                                <h4>Sistema Funcional Completo</h4>
-                                <p>Se desarrolló un sistema completamente funcional que cumple con todos los objetivos
+                                <h4>Sistema Funcional</h4>
+                                <p>Se desarrolló un sistema funcional que cumple con todos los objetivos
                                     planteados.</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-brain"></i>
-                                <h4>IA Integrada</h4>
-                                <p>Implementación exitosa de algoritmos de inteligencia artificial para diagnóstico
-                                    predictivo.</p>
+                                <h4>IA</h4>
+                                <p>Implementación exitosa inteligencia artificial para el diagnóstico.</p>
                             </div>
                             <div class="achievement-item">
                                 <i class="fas fa-shield-alt"></i>
@@ -652,7 +569,7 @@
                     </div>
 
                     <div class="subsection">
-                        <h3>10.2 Lecciones Aprendidas</h3>
+                        <h3>9.2 Lecciones Aprendidas</h3>
                         <ul>
                             <li>La <strong>modularización del código</strong> facilitó el desarrollo y las pruebas</li>
                             <li>El uso de <strong>PySide6</strong> permitió crear una interfaz profesional y responsive
@@ -664,7 +581,7 @@
                     </div>
 
                     <div class="subsection">
-                        <h3>10.3 Trabajo Futuro</h3>
+                        <h3>9.3 Trabajo Futuro</h3>
                         <div class="future-work">
                             <div class="future-item">
                                 <h4><i class="fas fa-cloud me-2"></i>Versión Cloud</h4>
@@ -684,12 +601,12 @@
                     </div>
                 </section>
 
-                <!-- 11. REFERENCIAS -->
+                <!-- 10. REFERENCIAS -->
                 <section id="referencias" class="doc-section">
-                    <h2 class="section-title">12. Referencias</h2>
+                    <h2 class="section-title">10. Referencias</h2>
 
                     <div class="subsection">
-                        <h3>12.1 Documentación Técnica</h3>
+                        <h3>10.1 Documentación Técnica</h3>
                         <ol class="references-list">
                             <li>Python Software Foundation. (2024). <em>Python 3.8 Documentation</em>. <a
                                     href="https://docs.python.org/3.8/" target="_blank">https://docs.python.org/3.8/</a>

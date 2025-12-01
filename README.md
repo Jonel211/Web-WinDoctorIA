@@ -47,24 +47,6 @@ WinDocIA/
 - 💡 **Syntax highlighting** - Código con Prism.js
 - 📈 **Gráficos Chart.js** - Visualización de resultados
 
-## 🚀 Cómo Visualizar
-
-### Opción 1: Navegador Directo
-1. Navega a la carpeta `WinDocIA`
-2. Haz doble clic en `index.html`
-3. Se abrirá en tu navegador predeterminado
-
-### Opción 2: Servidor Local (Recomendado)
-```powershell
-# Desde la carpeta WinDocIA
-cd "c:\Mis archivos\Sistm\WinDoctorIA\WinDocIA"
-
-# Con Python
-python -m http.server 8000
-
-# Luego abre: http://localhost:8000
-```
-
 ## 📝 Completar la Documentación
 
 Las secciones 7-14 están en `SECCIONES_ADICIONALES.md`. Para integrarlas:
@@ -103,20 +85,6 @@ new Chart(ctx, {
 });
 ```
 
-## 📊 Contenido Incluido
-
-### Datos Reales del Proyecto
-- ✅ Objetivos basados en el README del proyecto
-- ✅ Tecnologías extraídas de requirements.txt
-- ✅ Arquitectura basada en la estructura real del código
-- ✅ Componentes identificados del análisis del código fuente
-- ✅ Pruebas documentadas (limpieza, RAM, disco)
-
-### Diagramas Técnicos
-- ✅ Diagrama de arquitectura en capas
-- ✅ Diagrama de flujo de datos (sequence diagram)
-- ✅ Diagrama de metodología de desarrollo
-
 ## 🖨️ Exportar a PDF
 
 ### Método 1: Imprimir como PDF
@@ -137,16 +105,6 @@ La documentación se adapta automáticamente a:
 - 📱 **Tablets** (768px - 991px) - Layout optimizado
 - 💻 **Desktop** (> 992px) - Navegación lateral fija
 
-## 🎯 Uso Empresarial
-
-Esta documentación está diseñada para:
-- ✅ Presentaciones a empresas
-- ✅ Evaluaciones académicas
-- ✅ Propuestas de proyecto
-- ✅ Auditorías técnicas
-- ✅ Documentación de producto
-- ✅ Material de capacitación
-
 ## 🔧 Tecnologías Utilizadas
 
 ### Frontend
@@ -161,20 +119,3 @@ Esta documentación está diseñada para:
 - **Mermaid.js** - Diagramas técnicos
 - **Prism.js** - Syntax highlighting
 - **Chart.js** - Gráficos
-
-## 📞 Soporte
-
-Para modificaciones o mejoras:
-1. Revisa los comentarios en el código
-2. Consulta la documentación de las librerías utilizadas
-3. Todos los archivos están bien documentados
-
-## 📄 Licencia
-
-Documentación creada para el proyecto WinDoctorIA.
-
----
-
-**Versión:** 1.0.0  
-**Última actualización:** Noviembre 2025  
-**Estado:** En desarrollo (Secciones 1-6 completas)
