@@ -370,38 +370,38 @@
                         <h3>6.1 Diagrama de Arquitectura</h3>
                         <div class="diagram-container">
                             <pre class="mermaid">
-graph TB
-    subgraph "Capa de Presentación"
-        GUI[GUI - PySide6]
-        Panels[Paneles Especializados]
-    end
-    
-    subgraph "Capa de Lógica de Negocio"
-        IA[Motor IA]
-        Diag[Sistema Diagnóstico]
-        Rep[Reparador]
-        Mal[Detector Malware]
-    end
-    
-    subgraph "Capa de Datos"
-        Sys[Sistema Operativo]
-        Proc[Procesos]
-        Files[Sistema de Archivos]
-    end
-    
-    GUI --> Panels
-    Panels --> IA
-    Panels --> Diag
-    Panels --> Rep
-    Panels --> Mal
-    
-    IA --> Diag
-    Diag --> Sys
-    Rep --> Sys
-    Mal --> Proc
-    
-    Sys --> Proc
-    Sys --> Files
+                                graph TB
+                                    subgraph "Capa de Presentación"
+                                        GUI[GUI - PySide6]
+                                        Panels[Paneles Especializados]
+                                    end
+                                    
+                                    subgraph "Capa de Lógica de Negocio"
+                                        IA[Motor IA]
+                                        Diag[Sistema Diagnóstico]
+                                        Rep[Reparador]
+                                        Mal[Detector Malware]
+                                    end
+                                    
+                                    subgraph "Capa de Datos"
+                                        Sys[Sistema Operativo]
+                                        Proc[Procesos]
+                                        Files[Sistema de Archivos]
+                                    end
+                                    
+                                    GUI --> Panels
+                                    Panels --> IA
+                                    Panels --> Diag
+                                    Panels --> Rep
+                                    Panels --> Mal
+                                    
+                                    IA --> Diag
+                                    Diag --> Sys
+                                    Rep --> Sys
+                                    Mal --> Proc
+                                    
+                                    Sys --> Proc
+                                    Sys --> Files
                             </pre>
                         </div>
                     </div>
@@ -607,8 +607,14 @@ graph TB
                     <h2 class="section-title">9. Pruebas y Validación</h2>
 
                     <div class="subsection">
-                        <h3>10.1 Metodología de Pruebas</h3>
+                        <h3>9.1 Metodología de Pruebas</h3>
                         <p>En la pagina principal se muestra la funcionalidad de la herramienta.</p>
+                    </div>
+                    <div class="text-center mt-5">
+                        <a href="pruebas.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket me-2"></i>
+                            Ir a Pruebas
+                        </a>
                     </div>
                 </section>
 
